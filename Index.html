@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Force Home</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    const href = link.getAttribute('href');
+
+                    // Check if the link is local (not an external link)
+                    if (href && !href.startsWith('http')) {
+                        // Append a parameter to indicate the link should be handled
+                        const newHref = href + (href.includes('?') ? '&' : '?') + 'error=404';
+
+                        event.preventDefault();
+
+                        fetch(newHref, { method: 'HEAD' })
+                            .then(response => {
+                                if (response.ok) {
+                                    window.location.href = href;
+                                } else {
+                                    window.location.href = '404.html';
+                                }
+                            })
+                            .catch(() => {
+                                window.location.href = '404.html';
+                            });
+                    }
+                });
+            });
+
+            // Handle URL parameter on page load (for testing invalid links)
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('error') === '404') {
+                window.location.href = '404.html';
+            }
+        });
+     </script>-->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar .logo img {
+            height: 50px;
+        }
+        .top-bar .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .accent-bar {
+            background-color: blue;
+            height: 5px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('Banner.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .main-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            display: inline-block;
+        }
+        .main-box a {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .three-boxes {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .three-boxes .box {
+            background-color: darkblue;
+            padding: 20px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+        .three-boxes .box img {
+            width: 100px;
+            height: auto;
+        }
+        .simulators {
+            padding: 20px;
+            text-align: center;
+        }
+        .simulators h2 {
+            margin-bottom: 20px;
+        }
+        .simulator {
+            margin-bottom: 20px;
+        }
+        .support {
+            padding: 20px;
+            text-align: center;
+        }
+        .support h2 {
+            margin-bottom: 20px;
+        }
+        .support-buttons a {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .support-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .support-links .link-group {
+            flex: 1;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .support-links .link-group a {
+            display: block;
+            color: blue;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="Layer_One/About.html">About</a>
+            <a href="404.html">Support</a>
+            <a href="404.html">Database</a>
+            <a href="404.html">Book a Mission</a>
+        </div>
+    </div>
+    <div class="accent-bar"></div>
+    <div class="main-content">
+        <div class="main-box">
+            <h1>Welcome to Space Force, Project 2-7</h1>
+            <p>Where would you like to start?</p>
+            <a href="Universe.html">Universe</a>
+            <a href="404.html">Book a Mission</a>
+        </div>
+    </div>
+    <div class="three-boxes">
+        <div class="box">
+            <a href="https://www.youtube.com"><img url="Youtube.png" alt="YouTube"></a>
+        </div>
+        <div class="box">
+            <a href="https://www.twitch.tv"><img src="twitch.jpg" alt="Twitch"></a>
+        </div>
+        <div class="box">
+            <a href="https://www.facebook.com"><img src="facebook.jpg" alt="Facebook"></a>
+        </div>
+    </div>
+    <div class="simulators">
+        <h2>Simulators</h2>
+        <div class="simulator">
+            <h3>Cronos</h3>
+            <p>A brief description of the Cronos simulator.</p>
+        </div>
+        <div class="simulator">
+            <h3>Fenix</h3>
+            <p>A brief description of the Fenix simulator.</p>
+        </div>
+    </div>
+    <div class="support">
+        <h2>Support</h2>
+        <div class="support-buttons">
+            <a href="404.html">Career</a>
+            <a href="404.html">Donate</a>
+            <a href="404.html">Write</a>
+        </div>
+        <div class="support-links">
+            <div class="link-group">
+                <h3>Career</h3>
+                <a href="404.html">Link 1</a>
+                <a href="404.html">Link 2</a>
+                <a href="404.html">Link 3</a>
+            </div>
+            <div class="link-group">
+                <h3>Donate</h3>
+                <a href="404.html">Link 1</a>
+                <a href="404.html">Link 2</a>
+                <a href="404.html">Link 3</a>
+            </div>
+            <div class="link-group">
+                <h3>Write</h3>
+                <a href="404.html">Link 1</a>
+                <a href="404.html">Link 2</a>
+                <a href="404.html">Link 3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

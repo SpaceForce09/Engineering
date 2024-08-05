@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: red;
+    background: #f4f4f4;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+    animation: glitchTop 1s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    animation: glitchBottom 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+    0% {
+        clip: rect(2px, 9999px, 15px, 0);
+        transform: skew(0.3deg);
+    }
+    100% {
+        clip: rect(85px, 9999px, 5px, 0);
+        transform: skew(0.3deg);
+    }
+}
+
+@keyframes glitchBottom {
+    0% {
+        clip: rect(85px, 9999px, 100px, 0);
+        transform: skew(0.3deg);
+    }
+    100% {
+        clip: rect(5px, 9999px, 85px, 0);
+        transform: skew(0.3deg);
+    }
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
